@@ -864,9 +864,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Manual
 --------------------------------------------------------------*/
+:root{
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
 #manual .side-content{
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px 10px;
 }
 #manual .post-content{
@@ -893,10 +899,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #manual .side-content .post-content > .post-image .img{
     width: 100%;
+    transform: scale(.8);
     transition: all 1s ease;
 }
 #manual .side-content .post-content > .post-image .img:hover{
-    transform:scale(1.1);
+    transform:scale(1);
 }
 #manual .side-content .post-content > .post-image .post-info span{
     margin: 0 .5rem;
@@ -970,11 +977,25 @@ section .side .lst ul .lstimg{
 }
 
 @media (max-width: 768px) {
+    
     #manual .side-content{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         padding: 10px 10px;
+    }
+    #manual .side-content .post-content > .post-image .img{
+        width: 100%;
+        transform: scale(1);
+        transition: all 1s ease;
+    }
+    #manual .side-content .post-content > .post-image .img:hover{
+        transform: scale(1.1)
+    }
+    #manual .side-content .post-content > .post-image .post-info{
+        font-size: 10px;
+        padding: .5rem;
+        
     }
     
 }
