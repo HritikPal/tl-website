@@ -866,7 +866,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 :root{
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-
 }
 #manual .side-content{
     display: flex;
@@ -899,7 +898,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #manual .side-content .post-content > .post-image .img{
     width: 100%;
-    transform: scale(.8);
+    transform: scale(.9);
     transition: all 1s ease;
 }
 #manual .side-content .post-content > .post-image .img:hover{
@@ -917,6 +916,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #manual .post-content .post-title p{
     color: black;
+    font-size: 2em;
 }
 
 #manual .btn:hover {
